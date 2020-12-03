@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                tools:context="com.makstokarev.quiz.MainActivity"
+                android:background="#F6F4F4" android:animationCache="true">
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/background" />
+
+    <TextView
+            android:layout_width="361dp"
+            android:layout_height="wrap_content"
+            android:text="IT Викторина"
+            android:layout_marginTop="48dp"
+            android:textSize="56dp"
+            android:id="@+id/textView"
+            android:layout_alignParentTop="true"
+            android:layout_alignLeft="@+id/editName"
+            android:layout_alignStart="@+id/editName"
+            android:textColor="#768E76" android:layout_marginLeft="-65dp" android:layout_marginStart="-65dp"/>
+
+    <Button
+            android:layout_width="200dp"
+            android:layout_height="52dp"
+            android:text="Начать"
+            android:id="@+id/button"
+            android:textSize="30dp"
+            android:layout_above="@+id/button2"
+            android:layout_alignLeft="@+id/editName"
+            android:layout_alignStart="@+id/editName"
+            android:layout_marginBottom="25dp"
+            android:background="#FF3D00"
+            android:textColor="#ffffff"/>
+
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/editName"
+            android:textColor="#df040b"
+            android:hint="Токарев Максим"
+            android:layout_centerInParent="true"/>
+
+    <Button
+            android:layout_width="200dp"
+            android:layout_height="52dp"
+            android:text="Правила"
+            android:id="@+id/button2"
+            android:textSize="30dp"
+            android:layout_marginBottom="33dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignLeft="@+id/button"
+            android:layout_alignStart="@+id/button"
+            android:background="#01579B"
+            android:textColor="#ffffff"/>
+</RelativeLayout>
